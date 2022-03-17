@@ -14,7 +14,6 @@
     "rollup": "^2.70.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup --config && cp dist/eruda-outline-plugin.js demo/eruda-outline-plugin.js"
   },
   "repository": {
