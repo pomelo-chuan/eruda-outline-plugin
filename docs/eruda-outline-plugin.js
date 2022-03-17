@@ -157,6 +157,10 @@
   function insertClassNameToBody(className) {
     var body = document.querySelector('body');
 
+    if (!body) {
+      return;
+    }
+
     if (body.classList.contains(className)) {
       return;
     }
@@ -166,6 +170,10 @@
 
   function removeClassNameToBody(className) {
     var body = document.querySelector('body');
+
+    if (!body) {
+      return;
+    }
 
     if (!body.classList.contains(className)) {
       return;
@@ -235,9 +243,6 @@
           _get(_getPrototypeOf(ErudaOutlinePlugin.prototype), "init", this).call(this, $el);
 
           this.$el = $el;
-          var css = getOutlineCss(".".concat(bodyClassName));
-          this.css = css;
-          insertCssToBody(".".concat(styleClassName), this.css);
           this.bindEvent();
         }
       }, {
@@ -263,12 +268,21 @@
           }));
         }
       }, {
+        key: "insertCss",
+        value: function insertCss() {
+          var css = getOutlineCss(".".concat(bodyClassName));
+          this.css = css;
+          insertCssToBody(".".concat(styleClassName), this.css);
+        }
+      }, {
         key: "bindEvent",
         value: function bindEvent() {
           var _this2 = this;
 
           var $el = this.$el;
           $el.on('click', '.erudaOutlinePlugin-switch-button', function () {
+            _this2.insertCss();
+
             if (_this2.status) {
               _this2.status = false;
               removeClassNameToBody(bodyClassName);
