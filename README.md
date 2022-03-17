@@ -2,7 +2,7 @@
 
 Eruda plugin that insert outline to all elements.
 
-![](./midea/IMG_3413.JPEG)
+![](./midea/IMG_3421.jpg)
 
 ## Before all
 You need to load [eruda](https://github.com/liriliri/eruda#install) first, otherwise it can\'t work.
