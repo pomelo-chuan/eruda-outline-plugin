@@ -144,11 +144,11 @@
   }
 
   function getRandomColor() {
-    var letters = 'ABCDEF0123456789'.split('');
+    var text = 'ABCDEF0123456789'.split('');
     var color = '#';
 
     for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+      color += text[Math.floor(Math.random() * 16)];
     }
 
     return color;
@@ -183,7 +183,7 @@
   }
 
   function insertCssToBody(cssSelector, css) {
-    var existentEle = document.querySelector(cssSelector);
+    var existentEle = document.querySelector("#".concat(cssSelector));
 
     if (!existentEle) {
       var style = document.createElement('style');
@@ -193,7 +193,7 @@
       return;
     }
 
-    if (!existentEle.innerHTML) {
+    if (!existentEle.innerHTML || css !== existentEle.innerHTML) {
       existentEle.innerHTML = css;
     }
   }
@@ -272,7 +272,7 @@
         value: function insertCss() {
           var css = getOutlineCss(".".concat(bodyClassName));
           this.css = css;
-          insertCssToBody(".".concat(styleClassName), this.css);
+          insertCssToBody(styleClassName, this.css);
         }
       }, {
         key: "bindEvent",
@@ -281,12 +281,12 @@
 
           var $el = this.$el;
           $el.on('click', '.erudaOutlinePlugin-switch-button', function () {
-            _this2.insertCss();
-
             if (_this2.status) {
               _this2.status = false;
               removeClassNameToBody(bodyClassName);
             } else {
+              _this2.insertCss();
+
               _this2.status = true;
               insertClassNameToBody(bodyClassName);
             }
