@@ -46,10 +46,16 @@
     }
 
     .tip {
-      background-color: cornflowerblue;
+      background-color: rgb(104, 212, 140);
       color: white;
       padding: 10px;
-      border: 1px solid rgb(18, 94, 236);
+      border: 1px solid rgb(9, 224, 81);
+      border-radius: 4px;
+    }
+
+    .mark {
+      background-color: rgba(226, 226, 226, 0.2);
+      padding: 4px;
       border-radius: 4px;
     }
   </style>
@@ -81,7 +87,8 @@
   </section>
 
   <section>
-    <p class="tip">Click <span class="eruda-icon-tool"></span> / Outline / Outline Off(On) to check.</p>
+    <p class="tip">Click <span class="eruda-icon-tool mark"></span> / <span class="mark">Outline</span> / <span
+        class="mark">Outline Off(On)</span> to check.</p>
     <div class="doc">View doc on <a href="https://github.com/pomelo-chuan/eruda-outline-plugin">Github</a></div>
   </section>
   <script>eruda.add(erudaOutlinePlugin)</script>

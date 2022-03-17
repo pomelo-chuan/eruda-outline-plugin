@@ -1,8 +1,8 @@
 # eruda-outline-plugin
 
-Eruda plugin for insert outline to all elements.
+Eruda plugin that insert outline to all elements.
 
-![](./midea/IMG_3406.JPEG)
+![](./midea/IMG_3413.JPEG)
 
 ## Before all
 You need to load [eruda](https://github.com/liriliri/eruda#install) first, otherwise it can\'t work.
