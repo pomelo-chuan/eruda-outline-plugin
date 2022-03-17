@@ -1,0 +1,31 @@
+{
+  "name": "eruda-outline-plugin",
+  "version": "0.0.1",
+  "description": "outline-plugin for eruda",
+  "main": "rollup.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "@rollup/plugin-babel": "^5.3.1",
+    "rollup": "^2.70.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pomelo-chuan/eruda-outline-plugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pomelo-chuan/eruda-outline-plugin/issues"
+  },
+  "homepage": "https://github.com/pomelo-chuan/eruda-outline-plugin#readme"
+}

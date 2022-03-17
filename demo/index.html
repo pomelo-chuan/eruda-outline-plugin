@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>erudaOutlinePlugin demo</title>
+  <script src="./eruda.js"></script>
+  <script src="../dist/eruda-outline-plugin.js"></script>
+  <script>eruda.init()</script>
+  <style>
+    body {
+      font-family: system-ui,
+        -apple-system,
+        'Segoe UI',
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        'Apple Color Emoji',
+        'Segoe UI Emoji';
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h2>I love you</h2>
+  </div>
+  <div>
+    <div>I am a <span>div</span></div>
+    <p>I am a <span>p</span></p>
+    <input value="I am an input" />
+    <button>I am a button</button>
+  </div>
+  <script>eruda.add(erudaOutlinePlugin)</script>
+</body>
+
+</html>
