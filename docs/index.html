@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>erudaOutlinePlugin demo</title>
+  <script src="./eruda.js"></script>
+  <script src="./eruda-outline-plugin.js"></script>
+  <script>eruda.init()</script>
+  <style type="text/css">
+    body {
+      font-family: system-ui,
+        -apple-system,
+        'Segoe UI',
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        'Apple Color Emoji',
+        'Segoe UI Emoji';
+    }
+
+    .box {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .box-item {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border: 1px solid rgb(235, 235, 235);
+      background-color: rgb(255, 199, 179);
+    }
+
+    .doc {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(65, 65, 65);
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h1>eruda-outline-plugin</h1>
+  </section>
+
+  <section>
+    <h3>Name lists:</h2>
+      <ul>
+        <li>Tom</li>
+        <li>Jerry</li>
+        <li>MiaoMiao</li>
+      </ul>
+  </section>
+
+  <section>
+    <h3>Fruit lists:</h2>
+      <div class="box">
+        <div class="box-item">🍎</div>
+        <div class="box-item">🍐</div>
+        <div class="box-item">🍌</div>
+        <div class="box-item">🍊</div>
+      </div>
+  </section>
+
+  <section>
+    <div class="doc">View doc on <a href="https://github.com/pomelo-chuan/eruda-outline-plugin">Github</a></div>
+  </section>
+  <script>eruda.add(erudaOutlinePlugin)</script>
+</body>
+
+</html>
