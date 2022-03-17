@@ -2,7 +2,7 @@
   "name": "eruda-outline-plugin",
   "version": "0.0.1",
   "description": "outline-plugin for eruda",
-  "main": "rollup.config.js",
+  "main": "dist/eruda-outline-plugin.js",
   "directories": {
     "lib": "lib"
   },
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup --config"
+    "build": "rollup --config && cp dist/eruda-outline-plugin.js demo/eruda-outline-plugin.js"
   },
   "repository": {
     "type": "git",

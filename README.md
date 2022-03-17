@@ -30,4 +30,4 @@ You can also install by script
 
 ## Demo
 
-Open in your mobile phone [demo]().
+Open in your mobile phone [demo](https://pomelo-chuan.github.io/eruda-outline-plugin/demo/index.html).
