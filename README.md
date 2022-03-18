@@ -1,5 +1,7 @@
 # eruda-outline-plugin
 
+[![NPM version][npm-image]][npm-url]
+
 Eruda plugin that insert outline to all elements.
 
 ![](./midea/IMG_3421.jpg)
