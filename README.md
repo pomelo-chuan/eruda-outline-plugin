@@ -2,6 +2,9 @@
 
 [![NPM version][npm-image]][npm-url]
 
+[npm-image]: https://img.shields.io/npm/v/eruda-outline-plugin?style=flat-square
+[npm-url]: https://npmjs.org/package/eruda-outline-plugin
+
 Eruda plugin that insert outline to all elements.
 
 ![](./midea/IMG_3421.jpg)
